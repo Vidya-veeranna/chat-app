@@ -1,11 +1,11 @@
 import React from 'react';
-import DashboardToggle from '../dashboard/DashboardToggle';
+import Dashboard from './dashboard';
 
 const SideBar = () => {
   return (
     <div className="h-100 pt-2">
       <div>
-        <DashboardToggle />
+        <Dashboard />
       </div>
     </div>
   );
