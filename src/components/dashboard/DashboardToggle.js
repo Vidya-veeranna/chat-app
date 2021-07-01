@@ -6,7 +6,7 @@ import { auth } from '../../misc/Firebase';
 
 const DashboardToggle = () => {
   const { isOpen, open, close } = useModalState();
-  const isMobile = useMediaQuery('max-width: 992px');
+  const isMobile = useMediaQuery('(max-width: 992px)');
   const onSignOut = useCallback(() => {
     auth.signOut();
     Alert.info('Sign out', 4000);
