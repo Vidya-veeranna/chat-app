@@ -25,7 +25,8 @@ const ChatRoomList = ({ aboveElHeight }) => {
       {rooms &&
         rooms.length > 0 &&
         rooms.map(room => {
-          <Nav.Item
+
+         return <Nav.Item
             componentClass={Link}
             to={`/chats/${room.id}`}
             key={room.id}
